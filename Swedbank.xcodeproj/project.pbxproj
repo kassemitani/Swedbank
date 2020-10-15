@@ -1,0 +1,1017 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083AF79025299ACC00B16476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF78F25299ACC00B16476 /* AppDelegate.swift */; };
+		083AF79225299ACC00B16476 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF79125299ACC00B16476 /* SceneDelegate.swift */; };
+		083AF79425299ACC00B16476 /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF79325299ACC00B16476 /* RegionsTableViewController.swift */; };
+		083AF79725299ACC00B16476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083AF79525299ACC00B16476 /* Main.storyboard */; };
+		083AF79925299ACE00B16476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083AF79825299ACE00B16476 /* Assets.xcassets */; };
+		083AF79C25299ACE00B16476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083AF79A25299ACE00B16476 /* LaunchScreen.storyboard */; };
+		083AF7A725299ACE00B16476 /* SwedbankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF7A625299ACE00B16476 /* SwedbankTests.swift */; };
+		083AF7B225299ACF00B16476 /* SwedbankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF7B125299ACF00B16476 /* SwedbankUITests.swift */; };
+		083AF7D0252BD24400B16476 /* RegionsTableViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF7CF252BD24400B16476 /* RegionsTableViewController+DataSource.swift */; };
+		083AF7DC252BD3BC00B16476 /* RegionsTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF7DB252BD3BC00B16476 /* RegionsTableViewController+Delegate.swift */; };
+		083AF805252C8B7B00B16476 /* RegionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF804252C8B7B00B16476 /* RegionsPresenter.swift */; };
+		083AF80C252C8BD800B16476 /* RegionsStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF80B252C8BD800B16476 /* RegionsStoreManager.swift */; };
+		083AF814252C8C2B00B16476 /* RegionsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF813252C8C2B00B16476 /* RegionsNetworkManager.swift */; };
+		083AF819252C8DAA00B16476 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF818252C8DAA00B16476 /* Country.swift */; };
+		083AF822252C913100B16476 /* RegionsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF821252C913100B16476 /* RegionsRequestFactory.swift */; };
+		083AF82A252C919D00B16476 /* RegionsRequestFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF829252C919D00B16476 /* RegionsRequestFactoryProtocol.swift */; };
+		083AF830252C923E00B16476 /* RegionsNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF82F252C923E00B16476 /* RegionsNetworkManagerProtocol.swift */; };
+		083AF841252C930700B16476 /* RegionsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF840252C930700B16476 /* RegionsPresenterProtocol.swift */; };
+		083AF846252C942F00B16476 /* BankLocationJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF845252C942F00B16476 /* BankLocationJSON.swift */; };
+		083AF84B252C95F100B16476 /* RegionsTableViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF84A252C95F100B16476 /* RegionsTableViewControllerProtocol.swift */; };
+		083AF851252C963400B16476 /* RegionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF850252C963400B16476 /* RegionsRouter.swift */; };
+		083AF859252C964A00B16476 /* RegionsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF858252C964A00B16476 /* RegionsRouterProtocol.swift */; };
+		083AF85E252C968200B16476 /* DefaultRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF85D252C968200B16476 /* DefaultRouterProtocol.swift */; };
+		083AF868252C977800B16476 /* RegionsStoreManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF867252C977800B16476 /* RegionsStoreManagerProtocol.swift */; };
+		083AF86E252C9A7200B16476 /* TaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF86D252C9A7200B16476 /* TaskResult.swift */; };
+		083AF877252C9B5F00B16476 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF876252C9B5F00B16476 /* CoreDataStack.swift */; };
+		083AF87F252C9B6900B16476 /* CoreDataStackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF87E252C9B6900B16476 /* CoreDataStackProtocol.swift */; };
+		083AF885252C9BC400B16476 /* Swedbank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 083AF883252C9BC400B16476 /* Swedbank.xcdatamodeld */; };
+		083AF88B252C9D6A00B16476 /* RegionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF88A252C9D6A00B16476 /* RegionsAssembly.swift */; };
+		083AF8EB252DE36100B16476 /* BankRegion+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF8EA252DE36100B16476 /* BankRegion+Additions.swift */; };
+		083AF8F0252DE37500B16476 /* BankLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AF8EF252DE37500B16476 /* BankLocation+Additions.swift */; };
+		088E8B7425370084006DF0E7 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B7325370084006DF0E7 /* LocationTableViewController.swift */; };
+		088E8B79253700AA006DF0E7 /* LocationsTableViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B78253700AA006DF0E7 /* LocationsTableViewControllerProtocol.swift */; };
+		088E8B7E253700F0006DF0E7 /* LocationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B7D253700F0006DF0E7 /* LocationsPresenter.swift */; };
+		088E8B8325370113006DF0E7 /* LocationsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B8225370113006DF0E7 /* LocationsPresenterProtocol.swift */; };
+		088E8B882537014E006DF0E7 /* LocationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B872537014E006DF0E7 /* LocationsAssembly.swift */; };
+		088E8B8D2537016A006DF0E7 /* LocationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B8C2537016A006DF0E7 /* LocationsRouter.swift */; };
+		088E8B922537017D006DF0E7 /* LocationsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B912537017D006DF0E7 /* LocationsRouterProtocol.swift */; };
+		088E8B9B25370210006DF0E7 /* LocationInfoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8B9A25370210006DF0E7 /* LocationInfoAssembly.swift */; };
+		088E8BAF25370AED006DF0E7 /* LocationInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BAE25370AED006DF0E7 /* LocationInfoPresenter.swift */; };
+		088E8BB425370B04006DF0E7 /* LocationInfoPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BB325370B04006DF0E7 /* LocationInfoPresenterProtocol.swift */; };
+		088E8BB925370B29006DF0E7 /* LocationInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BB825370B29006DF0E7 /* LocationInfoTableViewController.swift */; };
+		088E8BBE25370B7F006DF0E7 /* LocationInfoTableViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BBD25370B7F006DF0E7 /* LocationInfoTableViewControllerProtocol.swift */; };
+		088E8BC325370BA3006DF0E7 /* LocationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BC225370BA3006DF0E7 /* LocationInfoViewModel.swift */; };
+		088E8BC825370BB8006DF0E7 /* TypeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BC725370BB8006DF0E7 /* TypeLocation.swift */; };
+		088E8BD42539021C006DF0E7 /* LocationTableViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BD32539021C006DF0E7 /* LocationTableViewController+DataSource.swift */; };
+		088E8BD925390267006DF0E7 /* LocationsTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BD825390267006DF0E7 /* LocationsTableViewController+Delegate.swift */; };
+		088E8BDE25390322006DF0E7 /* LocationInfoTableViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E8BDD25390322006DF0E7 /* LocationInfoTableViewController+DataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		083AF7A325299ACE00B16476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083AF78425299ACC00B16476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 083AF78B25299ACC00B16476;
+			remoteInfo = Swedbank;
+		};
+		083AF7AE25299ACF00B16476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083AF78425299ACC00B16476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 083AF78B25299ACC00B16476;
+			remoteInfo = Swedbank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083AF78C25299ACC00B16476 /* Swedbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swedbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		083AF78F25299ACC00B16476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		083AF79125299ACC00B16476 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		083AF79325299ACC00B16476 /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
+		083AF79625299ACC00B16476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		083AF79825299ACE00B16476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		083AF79B25299ACE00B16476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		083AF79D25299ACE00B16476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083AF7A225299ACE00B16476 /* SwedbankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwedbankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		083AF7A625299ACE00B16476 /* SwedbankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwedbankTests.swift; sourceTree = "<group>"; };
+		083AF7A825299ACE00B16476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083AF7AD25299ACF00B16476 /* SwedbankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwedbankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		083AF7B125299ACF00B16476 /* SwedbankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwedbankUITests.swift; sourceTree = "<group>"; };
+		083AF7B325299ACF00B16476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083AF7CF252BD24400B16476 /* RegionsTableViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegionsTableViewController+DataSource.swift"; sourceTree = "<group>"; };
+		083AF7DB252BD3BC00B16476 /* RegionsTableViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegionsTableViewController+Delegate.swift"; sourceTree = "<group>"; };
+		083AF804252C8B7B00B16476 /* RegionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsPresenter.swift; sourceTree = "<group>"; };
+		083AF80B252C8BD800B16476 /* RegionsStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsStoreManager.swift; sourceTree = "<group>"; };
+		083AF813252C8C2B00B16476 /* RegionsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsNetworkManager.swift; sourceTree = "<group>"; };
+		083AF818252C8DAA00B16476 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		083AF821252C913100B16476 /* RegionsRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRequestFactory.swift; sourceTree = "<group>"; };
+		083AF829252C919D00B16476 /* RegionsRequestFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRequestFactoryProtocol.swift; sourceTree = "<group>"; };
+		083AF82F252C923E00B16476 /* RegionsNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		083AF840252C930700B16476 /* RegionsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsPresenterProtocol.swift; sourceTree = "<group>"; };
+		083AF845252C942F00B16476 /* BankLocationJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankLocationJSON.swift; sourceTree = "<group>"; };
+		083AF84A252C95F100B16476 /* RegionsTableViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewControllerProtocol.swift; sourceTree = "<group>"; };
+		083AF850252C963400B16476 /* RegionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRouter.swift; sourceTree = "<group>"; };
+		083AF858252C964A00B16476 /* RegionsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRouterProtocol.swift; sourceTree = "<group>"; };
+		083AF85D252C968200B16476 /* DefaultRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouterProtocol.swift; sourceTree = "<group>"; };
+		083AF867252C977800B16476 /* RegionsStoreManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsStoreManagerProtocol.swift; sourceTree = "<group>"; };
+		083AF86D252C9A7200B16476 /* TaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResult.swift; sourceTree = "<group>"; };
+		083AF876252C9B5F00B16476 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		083AF87E252C9B6900B16476 /* CoreDataStackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackProtocol.swift; sourceTree = "<group>"; };
+		083AF884252C9BC400B16476 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		083AF88A252C9D6A00B16476 /* RegionsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsAssembly.swift; sourceTree = "<group>"; };
+		083AF8E1252DDF3000B16476 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		083AF8EA252DE36100B16476 /* BankRegion+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BankRegion+Additions.swift"; sourceTree = "<group>"; };
+		083AF8EF252DE37500B16476 /* BankLocation+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BankLocation+Additions.swift"; sourceTree = "<group>"; };
+		088E8B7325370084006DF0E7 /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		088E8B78253700AA006DF0E7 /* LocationsTableViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewControllerProtocol.swift; sourceTree = "<group>"; };
+		088E8B7D253700F0006DF0E7 /* LocationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenter.swift; sourceTree = "<group>"; };
+		088E8B8225370113006DF0E7 /* LocationsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenterProtocol.swift; sourceTree = "<group>"; };
+		088E8B872537014E006DF0E7 /* LocationsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsAssembly.swift; sourceTree = "<group>"; };
+		088E8B8C2537016A006DF0E7 /* LocationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRouter.swift; sourceTree = "<group>"; };
+		088E8B912537017D006DF0E7 /* LocationsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRouterProtocol.swift; sourceTree = "<group>"; };
+		088E8B9A25370210006DF0E7 /* LocationInfoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoAssembly.swift; sourceTree = "<group>"; };
+		088E8BAE25370AED006DF0E7 /* LocationInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoPresenter.swift; sourceTree = "<group>"; };
+		088E8BB325370B04006DF0E7 /* LocationInfoPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoPresenterProtocol.swift; sourceTree = "<group>"; };
+		088E8BB825370B29006DF0E7 /* LocationInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoTableViewController.swift; sourceTree = "<group>"; };
+		088E8BBD25370B7F006DF0E7 /* LocationInfoTableViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoTableViewControllerProtocol.swift; sourceTree = "<group>"; };
+		088E8BC225370BA3006DF0E7 /* LocationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewModel.swift; sourceTree = "<group>"; };
+		088E8BC725370BB8006DF0E7 /* TypeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeLocation.swift; sourceTree = "<group>"; };
+		088E8BD32539021C006DF0E7 /* LocationTableViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationTableViewController+DataSource.swift"; sourceTree = "<group>"; };
+		088E8BD825390267006DF0E7 /* LocationsTableViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationsTableViewController+Delegate.swift"; sourceTree = "<group>"; };
+		088E8BDD25390322006DF0E7 /* LocationInfoTableViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationInfoTableViewController+DataSource.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		083AF78925299ACC00B16476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083AF79F25299ACE00B16476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083AF7AA25299ACF00B16476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083AF78325299ACC00B16476 = {
+			isa = PBXGroup;
+			children = (
+				083AF78E25299ACC00B16476 /* Swedbank */,
+				083AF7A525299ACE00B16476 /* SwedbankTests */,
+				083AF7B025299ACF00B16476 /* SwedbankUITests */,
+				083AF78D25299ACC00B16476 /* Products */,
+				083AF8E0252DDF3000B16476 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		083AF78D25299ACC00B16476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				083AF78C25299ACC00B16476 /* Swedbank.app */,
+				083AF7A225299ACE00B16476 /* SwedbankTests.xctest */,
+				083AF7AD25299ACF00B16476 /* SwedbankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		083AF78E25299ACC00B16476 /* Swedbank */ = {
+			isa = PBXGroup;
+			children = (
+				083AF7EB252BD63600B16476 /* Storyboards */,
+				083AF7EA252BD62100B16476 /* Resourses */,
+				083AF7E3252BD54E00B16476 /* System */,
+				083AF7EE252BD6AB00B16476 /* Extensions */,
+				083AF7EC252BD65D00B16476 /* CoreData */,
+				083AF7C8252BA82500B16476 /* LocationInfo */,
+				083AF7C7252BA81C00B16476 /* Locations */,
+				083AF7C3252BA7CA00B16476 /* Regions */,
+			);
+			path = Swedbank;
+			sourceTree = "<group>";
+		};
+		083AF7A525299ACE00B16476 /* SwedbankTests */ = {
+			isa = PBXGroup;
+			children = (
+				083AF7A625299ACE00B16476 /* SwedbankTests.swift */,
+				083AF7A825299ACE00B16476 /* Info.plist */,
+			);
+			path = SwedbankTests;
+			sourceTree = "<group>";
+		};
+		083AF7B025299ACF00B16476 /* SwedbankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				083AF7B125299ACF00B16476 /* SwedbankUITests.swift */,
+				083AF7B325299ACF00B16476 /* Info.plist */,
+			);
+			path = SwedbankUITests;
+			sourceTree = "<group>";
+		};
+		083AF7C3252BA7CA00B16476 /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				083AF889252C9D5A00B16476 /* Assembly */,
+				083AF84F252C962D00B16476 /* RegionsRouter */,
+				083AF80A252C8BC800B16476 /* StoreManger */,
+				083AF809252C8B9C00B16476 /* NetworkManager */,
+				083AF803252C8A8800B16476 /* Presenter */,
+				083AF7CD252BA98200B16476 /* Model */,
+				083AF7C9252BA84000B16476 /* Controller */,
+			);
+			path = Regions;
+			sourceTree = "<group>";
+		};
+		083AF7C7252BA81C00B16476 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B7225370047006DF0E7 /* Controller */,
+				088E8B712537003D006DF0E7 /* Assembly */,
+				088E8B7025370033006DF0E7 /* Presenter */,
+				088E8B6F2537002E006DF0E7 /* Router */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		083AF7C8252BA82500B16476 /* LocationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B99253701FB006DF0E7 /* Controller */,
+				088E8B98253701F5006DF0E7 /* Presenter */,
+				088E8B97253701EB006DF0E7 /* Model */,
+				088E8B96253701E4006DF0E7 /* Assembly */,
+			);
+			path = LocationInfo;
+			sourceTree = "<group>";
+		};
+		083AF7C9252BA84000B16476 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				083AF79325299ACC00B16476 /* RegionsTableViewController.swift */,
+				083AF7CF252BD24400B16476 /* RegionsTableViewController+DataSource.swift */,
+				083AF7DB252BD3BC00B16476 /* RegionsTableViewController+Delegate.swift */,
+				083AF84A252C95F100B16476 /* RegionsTableViewControllerProtocol.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		083AF7CD252BA98200B16476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				083AF818252C8DAA00B16476 /* Country.swift */,
+				083AF845252C942F00B16476 /* BankLocationJSON.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		083AF7E3252BD54E00B16476 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				083AF78F25299ACC00B16476 /* AppDelegate.swift */,
+				083AF79125299ACC00B16476 /* SceneDelegate.swift */,
+				083AF79D25299ACE00B16476 /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		083AF7EA252BD62100B16476 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				083AF79825299ACE00B16476 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		083AF7EB252BD63600B16476 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				083AF79525299ACC00B16476 /* Main.storyboard */,
+				083AF79A25299ACE00B16476 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		083AF7EC252BD65D00B16476 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				083AF8E9252DE34E00B16476 /* Entities */,
+				083AF875252C9B4A00B16476 /* CoreDataStack */,
+				083AF7ED252BD66900B16476 /* Storage */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		083AF7ED252BD66900B16476 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				083AF883252C9BC400B16476 /* Swedbank.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		083AF7EE252BD6AB00B16476 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				083AF86C252C9A5400B16476 /* Foundation */,
+				083AF7EF252BD6D400B16476 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		083AF7EF252BD6D400B16476 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				083AF85D252C968200B16476 /* DefaultRouterProtocol.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		083AF803252C8A8800B16476 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				083AF804252C8B7B00B16476 /* RegionsPresenter.swift */,
+				083AF840252C930700B16476 /* RegionsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		083AF809252C8B9C00B16476 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				083AF820252C910E00B16476 /* RequestFactory */,
+				083AF82E252C921F00B16476 /* RequestService */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		083AF80A252C8BC800B16476 /* StoreManger */ = {
+			isa = PBXGroup;
+			children = (
+				083AF80B252C8BD800B16476 /* RegionsStoreManager.swift */,
+				083AF867252C977800B16476 /* RegionsStoreManagerProtocol.swift */,
+			);
+			path = StoreManger;
+			sourceTree = "<group>";
+		};
+		083AF820252C910E00B16476 /* RequestFactory */ = {
+			isa = PBXGroup;
+			children = (
+				083AF821252C913100B16476 /* RegionsRequestFactory.swift */,
+				083AF829252C919D00B16476 /* RegionsRequestFactoryProtocol.swift */,
+			);
+			path = RequestFactory;
+			sourceTree = "<group>";
+		};
+		083AF82E252C921F00B16476 /* RequestService */ = {
+			isa = PBXGroup;
+			children = (
+				083AF813252C8C2B00B16476 /* RegionsNetworkManager.swift */,
+				083AF82F252C923E00B16476 /* RegionsNetworkManagerProtocol.swift */,
+			);
+			path = RequestService;
+			sourceTree = "<group>";
+		};
+		083AF84F252C962D00B16476 /* RegionsRouter */ = {
+			isa = PBXGroup;
+			children = (
+				083AF850252C963400B16476 /* RegionsRouter.swift */,
+				083AF858252C964A00B16476 /* RegionsRouterProtocol.swift */,
+			);
+			path = RegionsRouter;
+			sourceTree = "<group>";
+		};
+		083AF86C252C9A5400B16476 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				083AF86D252C9A7200B16476 /* TaskResult.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		083AF875252C9B4A00B16476 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				083AF876252C9B5F00B16476 /* CoreDataStack.swift */,
+				083AF87E252C9B6900B16476 /* CoreDataStackProtocol.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		083AF889252C9D5A00B16476 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				083AF88A252C9D6A00B16476 /* RegionsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		083AF8E0252DDF3000B16476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				083AF8E1252DDF3000B16476 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		083AF8E9252DE34E00B16476 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				083AF8EA252DE36100B16476 /* BankRegion+Additions.swift */,
+				083AF8EF252DE37500B16476 /* BankLocation+Additions.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		088E8B6F2537002E006DF0E7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B8C2537016A006DF0E7 /* LocationsRouter.swift */,
+				088E8B912537017D006DF0E7 /* LocationsRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		088E8B7025370033006DF0E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B7D253700F0006DF0E7 /* LocationsPresenter.swift */,
+				088E8B8225370113006DF0E7 /* LocationsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		088E8B712537003D006DF0E7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B872537014E006DF0E7 /* LocationsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		088E8B7225370047006DF0E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B7325370084006DF0E7 /* LocationTableViewController.swift */,
+				088E8B78253700AA006DF0E7 /* LocationsTableViewControllerProtocol.swift */,
+				088E8BD32539021C006DF0E7 /* LocationTableViewController+DataSource.swift */,
+				088E8BD825390267006DF0E7 /* LocationsTableViewController+Delegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		088E8B96253701E4006DF0E7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				088E8B9A25370210006DF0E7 /* LocationInfoAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		088E8B97253701EB006DF0E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				088E8BC225370BA3006DF0E7 /* LocationInfoViewModel.swift */,
+				088E8BC725370BB8006DF0E7 /* TypeLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		088E8B98253701F5006DF0E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				088E8BAE25370AED006DF0E7 /* LocationInfoPresenter.swift */,
+				088E8BB325370B04006DF0E7 /* LocationInfoPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		088E8B99253701FB006DF0E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				088E8BB825370B29006DF0E7 /* LocationInfoTableViewController.swift */,
+				088E8BBD25370B7F006DF0E7 /* LocationInfoTableViewControllerProtocol.swift */,
+				088E8BDD25390322006DF0E7 /* LocationInfoTableViewController+DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		083AF78B25299ACC00B16476 /* Swedbank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083AF7B625299ACF00B16476 /* Build configuration list for PBXNativeTarget "Swedbank" */;
+			buildPhases = (
+				083AF78825299ACC00B16476 /* Sources */,
+				083AF78925299ACC00B16476 /* Frameworks */,
+				083AF78A25299ACC00B16476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swedbank;
+			productName = Swedbank;
+			productReference = 083AF78C25299ACC00B16476 /* Swedbank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		083AF7A125299ACE00B16476 /* SwedbankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083AF7B925299ACF00B16476 /* Build configuration list for PBXNativeTarget "SwedbankTests" */;
+			buildPhases = (
+				083AF79E25299ACE00B16476 /* Sources */,
+				083AF79F25299ACE00B16476 /* Frameworks */,
+				083AF7A025299ACE00B16476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				083AF7A425299ACE00B16476 /* PBXTargetDependency */,
+			);
+			name = SwedbankTests;
+			productName = SwedbankTests;
+			productReference = 083AF7A225299ACE00B16476 /* SwedbankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		083AF7AC25299ACF00B16476 /* SwedbankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083AF7BC25299ACF00B16476 /* Build configuration list for PBXNativeTarget "SwedbankUITests" */;
+			buildPhases = (
+				083AF7A925299ACF00B16476 /* Sources */,
+				083AF7AA25299ACF00B16476 /* Frameworks */,
+				083AF7AB25299ACF00B16476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				083AF7AF25299ACF00B16476 /* PBXTargetDependency */,
+			);
+			name = SwedbankUITests;
+			productName = SwedbankUITests;
+			productReference = 083AF7AD25299ACF00B16476 /* SwedbankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		083AF78425299ACC00B16476 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					083AF78B25299ACC00B16476 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					083AF7A125299ACE00B16476 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 083AF78B25299ACC00B16476;
+					};
+					083AF7AC25299ACF00B16476 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 083AF78B25299ACC00B16476;
+					};
+				};
+			};
+			buildConfigurationList = 083AF78725299ACC00B16476 /* Build configuration list for PBXProject "Swedbank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 083AF78325299ACC00B16476;
+			productRefGroup = 083AF78D25299ACC00B16476 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				083AF78B25299ACC00B16476 /* Swedbank */,
+				083AF7A125299ACE00B16476 /* SwedbankTests */,
+				083AF7AC25299ACF00B16476 /* SwedbankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		083AF78A25299ACC00B16476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083AF79C25299ACE00B16476 /* LaunchScreen.storyboard in Resources */,
+				083AF79925299ACE00B16476 /* Assets.xcassets in Resources */,
+				083AF79725299ACC00B16476 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083AF7A025299ACE00B16476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083AF7AB25299ACF00B16476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		083AF78825299ACC00B16476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083AF88B252C9D6A00B16476 /* RegionsAssembly.swift in Sources */,
+				083AF7DC252BD3BC00B16476 /* RegionsTableViewController+Delegate.swift in Sources */,
+				088E8B8325370113006DF0E7 /* LocationsPresenterProtocol.swift in Sources */,
+				088E8B79253700AA006DF0E7 /* LocationsTableViewControllerProtocol.swift in Sources */,
+				088E8B7E253700F0006DF0E7 /* LocationsPresenter.swift in Sources */,
+				083AF86E252C9A7200B16476 /* TaskResult.swift in Sources */,
+				083AF8EB252DE36100B16476 /* BankRegion+Additions.swift in Sources */,
+				083AF819252C8DAA00B16476 /* Country.swift in Sources */,
+				083AF82A252C919D00B16476 /* RegionsRequestFactoryProtocol.swift in Sources */,
+				083AF79425299ACC00B16476 /* RegionsTableViewController.swift in Sources */,
+				088E8BBE25370B7F006DF0E7 /* LocationInfoTableViewControllerProtocol.swift in Sources */,
+				083AF846252C942F00B16476 /* BankLocationJSON.swift in Sources */,
+				088E8BD42539021C006DF0E7 /* LocationTableViewController+DataSource.swift in Sources */,
+				083AF830252C923E00B16476 /* RegionsNetworkManagerProtocol.swift in Sources */,
+				083AF851252C963400B16476 /* RegionsRouter.swift in Sources */,
+				083AF868252C977800B16476 /* RegionsStoreManagerProtocol.swift in Sources */,
+				088E8B7425370084006DF0E7 /* LocationTableViewController.swift in Sources */,
+				088E8BD925390267006DF0E7 /* LocationsTableViewController+Delegate.swift in Sources */,
+				088E8BC825370BB8006DF0E7 /* TypeLocation.swift in Sources */,
+				088E8BDE25390322006DF0E7 /* LocationInfoTableViewController+DataSource.swift in Sources */,
+				083AF885252C9BC400B16476 /* Swedbank.xcdatamodeld in Sources */,
+				083AF859252C964A00B16476 /* RegionsRouterProtocol.swift in Sources */,
+				088E8BB925370B29006DF0E7 /* LocationInfoTableViewController.swift in Sources */,
+				083AF87F252C9B6900B16476 /* CoreDataStackProtocol.swift in Sources */,
+				088E8BC325370BA3006DF0E7 /* LocationInfoViewModel.swift in Sources */,
+				083AF814252C8C2B00B16476 /* RegionsNetworkManager.swift in Sources */,
+				083AF84B252C95F100B16476 /* RegionsTableViewControllerProtocol.swift in Sources */,
+				083AF8F0252DE37500B16476 /* BankLocation+Additions.swift in Sources */,
+				083AF805252C8B7B00B16476 /* RegionsPresenter.swift in Sources */,
+				088E8B9B25370210006DF0E7 /* LocationInfoAssembly.swift in Sources */,
+				083AF7D0252BD24400B16476 /* RegionsTableViewController+DataSource.swift in Sources */,
+				083AF79025299ACC00B16476 /* AppDelegate.swift in Sources */,
+				088E8BB425370B04006DF0E7 /* LocationInfoPresenterProtocol.swift in Sources */,
+				083AF841252C930700B16476 /* RegionsPresenterProtocol.swift in Sources */,
+				088E8B922537017D006DF0E7 /* LocationsRouterProtocol.swift in Sources */,
+				083AF85E252C968200B16476 /* DefaultRouterProtocol.swift in Sources */,
+				083AF877252C9B5F00B16476 /* CoreDataStack.swift in Sources */,
+				088E8BAF25370AED006DF0E7 /* LocationInfoPresenter.swift in Sources */,
+				083AF79225299ACC00B16476 /* SceneDelegate.swift in Sources */,
+				083AF822252C913100B16476 /* RegionsRequestFactory.swift in Sources */,
+				088E8B8D2537016A006DF0E7 /* LocationsRouter.swift in Sources */,
+				083AF80C252C8BD800B16476 /* RegionsStoreManager.swift in Sources */,
+				088E8B882537014E006DF0E7 /* LocationsAssembly.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083AF79E25299ACE00B16476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083AF7A725299ACE00B16476 /* SwedbankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083AF7A925299ACF00B16476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083AF7B225299ACF00B16476 /* SwedbankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		083AF7A425299ACE00B16476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 083AF78B25299ACC00B16476 /* Swedbank */;
+			targetProxy = 083AF7A325299ACE00B16476 /* PBXContainerItemProxy */;
+		};
+		083AF7AF25299ACF00B16476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 083AF78B25299ACC00B16476 /* Swedbank */;
+			targetProxy = 083AF7AE25299ACF00B16476 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		083AF79525299ACC00B16476 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				083AF79625299ACC00B16476 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		083AF79A25299ACE00B16476 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				083AF79B25299ACE00B16476 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		083AF7B425299ACF00B16476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		083AF7B525299ACF00B16476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		083AF7B725299ACF00B16476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7XWSJ84HP;
+				INFOPLIST_FILE = Swedbank/System/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassemitani.Swedbank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		083AF7B825299ACF00B16476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7XWSJ84HP;
+				INFOPLIST_FILE = Swedbank/System/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassemitani.Swedbank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		083AF7BA25299ACF00B16476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwedbankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassemitani.SwedbankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swedbank.app/Swedbank";
+			};
+			name = Debug;
+		};
+		083AF7BB25299ACF00B16476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwedbankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassemitani.SwedbankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swedbank.app/Swedbank";
+			};
+			name = Release;
+		};
+		083AF7BD25299ACF00B16476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwedbankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassemitani.SwedbankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swedbank;
+			};
+			name = Debug;
+		};
+		083AF7BE25299ACF00B16476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwedbankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassemitani.SwedbankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swedbank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		083AF78725299ACC00B16476 /* Build configuration list for PBXProject "Swedbank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083AF7B425299ACF00B16476 /* Debug */,
+				083AF7B525299ACF00B16476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083AF7B625299ACF00B16476 /* Build configuration list for PBXNativeTarget "Swedbank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083AF7B725299ACF00B16476 /* Debug */,
+				083AF7B825299ACF00B16476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083AF7B925299ACF00B16476 /* Build configuration list for PBXNativeTarget "SwedbankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083AF7BA25299ACF00B16476 /* Debug */,
+				083AF7BB25299ACF00B16476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083AF7BC25299ACF00B16476 /* Build configuration list for PBXNativeTarget "SwedbankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083AF7BD25299ACF00B16476 /* Debug */,
+				083AF7BE25299ACF00B16476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		083AF883252C9BC400B16476 /* Swedbank.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				083AF884252C9BC400B16476 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 083AF884252C9BC400B16476 /* DataModel.xcdatamodel */;
+			path = Swedbank.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 083AF78425299ACC00B16476 /* Project object */;
+}
